@@ -1,6 +1,8 @@
 package entity;
 
 
+import lombok.Data;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -10,6 +12,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 @Entity
+@Data
 public class PesertaEntity {
 
     @Id
@@ -31,4 +34,6 @@ public class PesertaEntity {
     @NotNull
     @NotEmpty
     private String noHp;
+
+
 }
